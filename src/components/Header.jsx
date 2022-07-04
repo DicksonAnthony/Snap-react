@@ -1,14 +1,13 @@
 import React from "react";
 import Img from "../images/Logo.svg";
-import { FaAngleDown } from "react-icons/fa";
 import {
   Nav,
   Leftcont,
   Image,
   Ul,
   Rightcont,
-  Login,
   Register,
+  Icon,
 } from "./styles/Header.styled";
 const Header = () => {
   return (
@@ -18,12 +17,14 @@ const Header = () => {
         <Ul>
           <li>
             Features
-            <FaAngleDown />
+            <Icon />
           </li>
+
           <li>
             Company
-            <FaAngleDown />
+            <Icon />
           </li>
+
           <li>Careers</li>
           <li>About</li>
         </Ul>
