@@ -1,9 +1,39 @@
-import React from 'react'
-
+import React from "react";
+import Img from "../images/Logo.svg";
+import { FaAngleDown } from "react-icons/fa";
+import {
+  Nav,
+  Leftcont,
+  Image,
+  Ul,
+  Rightcont,
+  Login,
+  Register,
+} from "./styles/Header.styled";
 const Header = () => {
   return (
-    <div>Header</div>
-  )
-}
+    <Nav>
+      <Leftcont>
+        <Image src={Img} alt="logo" />
+        <Ul>
+          <li>
+            Features
+            <FaAngleDown />
+          </li>
+          <li>
+            Company
+            <FaAngleDown />
+          </li>
+          <li>Careers</li>
+          <li>About</li>
+        </Ul>
+      </Leftcont>
+      <Rightcont>
+        <p>Login</p>
+        <Register>Register</Register>
+      </Rightcont>
+    </Nav>
+  );
+};
 
-export default Header
+export default Header;
