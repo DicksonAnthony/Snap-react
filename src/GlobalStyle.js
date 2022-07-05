@@ -4,7 +4,8 @@ export const GlobalStyle = createGlobalStyle`
     *{
         margin: 0;
         padding: 0;
-        outline: 1px solid magenta;
+        overflow: hidden;
+        /* outline: 1px solid magenta; */
         box-sizing: border-box;
         
     }

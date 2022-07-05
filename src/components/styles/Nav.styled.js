@@ -4,7 +4,7 @@ import { FaAngleDown } from "react-icons/fa";
 export const Nav = styled.nav`
   display: flex;
   align-items: center;
-  padding: 30px 40px 0;
+  padding: 20px 40px 0;
   justify-content: space-between;
 `;
 export const Leftcont = styled.div`
