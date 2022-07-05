@@ -1,11 +1,16 @@
 import styled from "styled-components";
-import { FaAngleDown } from "react-icons/fa";
+import { FaAngleDown, FaTimes } from "react-icons/fa";
 
 export const Nav = styled.nav`
   display: flex;
+  position: relative;
   align-items: center;
   padding: 20px 40px 0;
   justify-content: space-between;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 export const Leftcont = styled.div`
   display: flex;
@@ -38,4 +43,14 @@ export const Register = styled.a`
 export const Icon = styled(FaAngleDown)`
   margin-top: 2px;
   margin-left: 5px;
+`;
+export const Closebtn = styled(FaTimes)`
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+  }
 `;

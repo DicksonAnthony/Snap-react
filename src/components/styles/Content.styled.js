@@ -2,13 +2,22 @@ import styled from "styled-components";
 import Img from "../../images/image-hero-desktop.png";
 
 export const Wrapper = styled.div`
-  gap: 75px;
+  gap: 150px;
   display: flex;
-  padding: 32px 180px 0;
-  justify-content: space-between;
+  padding: 5px 150px 0;
+  justify-content: space-around;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    padding: 0;
+  }
 `;
 export const Div1 = styled.div`
   padding-top: 100px;
+
+  @media screen and (max-width: 786px) {
+    order: 2;
+  }
 `;
 export const Heading = styled.h1`
   font-size: 65px;
@@ -29,15 +38,14 @@ export const Image = styled.img``;
 export const Div2 = styled.div`
   width: 100%;
   background-image: url(${Img});
-  background-position: fill;
-  background-size: cover;
+  background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
   box-sizing: content-box;
 `;
-// export const Image2 = styled.img`
-//   box-sizing: border-box;
-//   max-width: 100%;
-// `;
 export const Imgdiv = styled.div`
   margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
