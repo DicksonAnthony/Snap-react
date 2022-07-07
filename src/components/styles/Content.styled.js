@@ -73,7 +73,7 @@ export const Div2 = styled.div`
   box-sizing: content-box;
 
   @media screen and (max-width: 768px) {
-    height: 250px;
+    height: 200px;
     background-image: url(${Img2});
     background-size: contain;
   }
@@ -86,6 +86,6 @@ export const Imgdiv = styled.div`
 
   @media screen and (max-width: 768px) {
     justify-content: space-around;
-    margin-top: 10px;
+    margin-top: 20px;
   }
 `;
