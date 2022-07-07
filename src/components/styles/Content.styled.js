@@ -10,8 +10,9 @@ export const Wrapper = styled.div`
 
   @media screen and (max-width: 768px) {
     gap: 45px;
-    flex-direction: column;
     padding: 0;
+    text-align: center;
+    flex-direction: column;
   }
 `;
 export const Div1 = styled.div`
@@ -42,22 +43,20 @@ export const Desc = styled.p`
   @media screen and (max-width: 786px) {
     padding: 0 10px;
     font-size: 16px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: center;
   }
 `;
-export const Button = styled.a`
+export const Button = styled.button`
+  border: none;
   padding: 15px 30px;
   border-radius: 10px;
   color: hsl(0, 0%, 98%);
+  font-family: "Epilogue";
   background-color: hsl(0, 0%, 8%);
 
   @media screen and (max-width: 786px) {
-    max-width: 50%;
-    text-align: center;
-    position: absolute;
-    right: 25%;
-    left: 25%;
+    margin: 0;
   }
 `;
 export const Image = styled.img`
@@ -87,5 +86,6 @@ export const Imgdiv = styled.div`
 
   @media screen and (max-width: 768px) {
     justify-content: space-around;
+    margin-top: 10px;
   }
 `;
