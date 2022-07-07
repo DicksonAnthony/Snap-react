@@ -19,11 +19,7 @@ const Content = () => {
     <>
       <Wrapper>
         <Div1>
-          <Heading>
-            Make
-            <br />
-            remote work
-          </Heading>
+          <Heading>Make remote work</Heading>
           <Desc>
             Get your team in sync, no matter your location. Streamline
             processes, create team riuals, and watch productivity soar.

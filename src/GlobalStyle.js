@@ -10,6 +10,7 @@ export const GlobalStyle = createGlobalStyle`
         
     }
     body{
+        height: 100vh;
         font-weight: 500;
         background-color: hsl(0, 0%, 98%);
         font-family: "Epilogue", sans-serif;

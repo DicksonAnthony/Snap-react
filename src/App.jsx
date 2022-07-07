@@ -1,12 +1,17 @@
-import React from "react";
-import Header from "./components/Header";
+import React, { useState } from "react";
+import Content from "./components/Content";
+import Navigation from "./components/Nav";
 import { GlobalStyle } from "./GlobalStyle";
+import MobileNav from "./components/MobileNav";
 
 function App() {
+  const [mobile, setMobile] = useState(false);
   return (
     <>
-      <Header />
       <GlobalStyle />
+      <Navigation />
+      <MobileNav mobile={mobile} setMobile={setMobile} />
+      <Content />
     </>
   );
 }

@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
 import Img from "../images/Logo.svg";
-import MobileNav from "./MobileNav";
 import {
   Nav,
   Leftcont,
@@ -9,15 +8,8 @@ import {
   Rightcont,
   Register,
   Icon,
-  Closebtn,
 } from "./styles/Nav.styled";
 const Navigation = () => {
-  const [mobile, setMobile] = useState(false);
-
-  const toggle = () => {
-    setMobile((prev) => !prev);
-  };
-
   return (
     <>
       <Nav>
@@ -43,8 +35,6 @@ const Navigation = () => {
           <Register>Register</Register>
         </Rightcont>
       </Nav>
-      <Closebtn />
-      <MobileNav mobile={mobile} setMobile={setMobile} />
     </>
   );
 };
