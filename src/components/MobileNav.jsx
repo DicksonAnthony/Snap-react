@@ -13,6 +13,7 @@ import {
   Closebtn,
   Register,
   Divfour,
+  Wrapper,
 } from "./styles/MobileNav.styled";
 
 const MobileNav = ({ mobile, setMobile }) => {

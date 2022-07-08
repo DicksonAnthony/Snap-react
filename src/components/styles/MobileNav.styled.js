@@ -3,6 +3,7 @@ import { FaTimes } from "react-icons/fa";
 
 export const Wrapper = styled.div`
   display: none;
+  
   @media screen and (max-width: 789px) {
     display: block;
   }
