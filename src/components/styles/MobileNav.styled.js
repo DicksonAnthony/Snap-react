@@ -1,6 +1,12 @@
 import styled from "styled-components";
 import { FaTimes } from "react-icons/fa";
 
+export const Wrapper = styled.div`
+  display: none;
+  @media screen and (max-width: 789px) {
+    display: block;
+  }
+`;
 export const Nav = styled.nav`
   gap: 50%;
   display: flex;

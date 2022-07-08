@@ -21,7 +21,7 @@ const MobileNav = ({ mobile, setMobile }) => {
   };
 
   return (
-    <>
+    <Wrapper>
       <Divfour mobile={mobile}>
         <Divtwo mobile={mobile}>
           <Ul>
@@ -46,7 +46,7 @@ const MobileNav = ({ mobile, setMobile }) => {
         <Image src={Img} alt="logo" />
         <Div onClick={toggle}>{mobile ? <Closebtn /> : <Bars />}</Div>
       </Nav>
-    </>
+    </Wrapper>
   );
 };
 
