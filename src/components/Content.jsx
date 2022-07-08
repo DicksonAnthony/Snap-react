@@ -12,6 +12,7 @@ import {
   Div2,
   Wrapper,
   Imgdiv,
+  Imagetwo,
 } from "./styles/Content.styled";
 
 const Content = () => {
@@ -33,6 +34,7 @@ const Content = () => {
           </Imgdiv>
         </Div1>
         <Div2></Div2>
+        <Imagetwo src={require("../images/image-hero-mobile.png")} />
       </Wrapper>
     </>
   );
