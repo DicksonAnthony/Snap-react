@@ -1,5 +1,5 @@
 import React from "react";
-import Img from "../images/Logo.svg";
+import Img from "../images/logo.svg";
 import {
   Nav,
   Leftcont,
