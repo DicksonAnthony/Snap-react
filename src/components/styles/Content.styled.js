@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import Img from "../../images/image-hero-desktop.png";
-import Img2 from "../../images/image-hero-mobile.png";
 
 export const Wrapper = styled.div`
   gap: 150px;
