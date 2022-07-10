@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Img from "../images/logo.svg";
 import {
   Nav,
@@ -15,18 +15,27 @@ import {
   Poptwo,
 } from "./styles/Nav.styled";
 const Navigation = () => {
+  const [pop, setPop] = useState(false);
+  const [popTwo, setPopTwo] = useState(false);
+
+  const showPop = () => {
+    setPop((prev) => !prev);
+  };
+  const showPopTwo = () => {
+    setPopTwo((prev) => !prev);
+  };
   return (
     <>
       <Nav>
         <Leftcont>
           <Image src={Img} alt="logo" />
           <Ul>
-            <Lione>
+            <Lione onMouseOver={showPop} onMouseOut={showPop}>
               Features
               <Icon />
             </Lione>
 
-            <Litwo>
+            <Litwo onMouseOver={showPopTwo} onMouseOut={showPopTwo}>
               Company
               <Icon />
             </Litwo>
@@ -34,13 +43,13 @@ const Navigation = () => {
             <Lithree>Careers</Lithree>
             <Lithree>About</Lithree>
           </Ul>
-          <Popone>
+          <Popone pop={pop}>
             <li>Todo List</li>
             <li>Calenders</li>
             <li>Reminders</li>
             <li>Planning</li>
           </Popone>
-          <Poptwo>
+          <Poptwo popTwo={popTwo}>
             <li>History</li>
             <li>Our Team</li>
             <li>Blog</li>

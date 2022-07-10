@@ -80,21 +80,22 @@ export const Register = styled.a`
 export const Popone = styled.ul`
   top: 70px;
   left: 200px;
-  /* width: 80px; */
-  height: 180px;
-  /* display: none; */
+  height: 170px;
   padding: 10px;
   list-style: none;
   position: absolute;
   border-radius: 7px;
-  /* box-shadow: ; */
+  visibility: ${({ pop }) => (pop ? "visible" : "hidden")};
   background-color: hsl(0, 0%, 98%);
+  box-shadow: 5px 10px 30px hsl(0, 0%, 65%);
+  transition: visibility 1s ease-out;
 
   li {
     margin-bottom: 20px;
   }
 `;
 export const Poptwo = styled(Popone)`
-  height: 150px;
   left: 350px;
+  height: 130px;
+  visibility: ${({ popTwo }) => (popTwo ? "visible" : "hidden")};
 `;
