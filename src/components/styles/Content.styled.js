@@ -48,11 +48,20 @@ export const Desc = styled.p`
 `;
 export const Button = styled.button`
   border: none;
+  font-weight: 500;
   padding: 15px 30px;
   border-radius: 10px;
   color: hsl(0, 0%, 98%);
   font-family: "Epilogue";
   background-color: hsl(0, 0%, 8%);
+
+  &:hover {
+    cursor: pointer;
+    font-weight: 600;
+    color: hsl(0, 0%, 8%);
+    border: 1px solid;
+    background-color: transparent;
+  }
 
   @media screen and (max-width: 786px) {
     margin: 0;

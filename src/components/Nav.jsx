@@ -8,6 +8,11 @@ import {
   Rightcont,
   Register,
   Icon,
+  Lione,
+  Litwo,
+  Lithree,
+  Popone,
+  Poptwo,
 } from "./styles/Nav.styled";
 const Navigation = () => {
   return (
@@ -16,19 +21,30 @@ const Navigation = () => {
         <Leftcont>
           <Image src={Img} alt="logo" />
           <Ul>
-            <li>
+            <Lione>
               Features
               <Icon />
-            </li>
+            </Lione>
 
-            <li>
+            <Litwo>
               Company
               <Icon />
-            </li>
+            </Litwo>
 
-            <li>Careers</li>
-            <li>About</li>
+            <Lithree>Careers</Lithree>
+            <Lithree>About</Lithree>
           </Ul>
+          <Popone>
+            <li>Todo List</li>
+            <li>Calenders</li>
+            <li>Reminders</li>
+            <li>Planning</li>
+          </Popone>
+          <Poptwo>
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+          </Poptwo>
         </Leftcont>
         <Rightcont>
           <p>Login</p>
