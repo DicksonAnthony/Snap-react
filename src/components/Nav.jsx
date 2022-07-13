@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import Img from "../images/logo.svg";
+import Todo from "../images/icon-todo.svg";
+import Calendar from "../images/icon-calendar.svg";
+import Reminder from "../images/icon-reminders.svg";
+import Planning from "../images/icon-planning.svg";
 import {
   Nav,
   Leftcont,
@@ -13,6 +17,7 @@ import {
   Lithree,
   Popone,
   Poptwo,
+  PopImg,
 } from "./styles/Nav.styled";
 const Navigation = () => {
   const [pop, setPop] = useState(false);
@@ -44,10 +49,22 @@ const Navigation = () => {
             <Lithree>About</Lithree>
           </Ul>
           <Popone pop={pop}>
-            <li>Todo List</li>
-            <li>Calenders</li>
-            <li>Reminders</li>
-            <li>Planning</li>
+            <li>
+              <PopImg src={Todo} />
+              Todo List
+            </li>
+            <li>
+              <PopImg src={Calendar} />
+              Calenders
+            </li>
+            <li>
+              <PopImg src={Reminder} />
+              Reminders
+            </li>
+            <li>
+              <PopImg src={Planning} />
+              Planning
+            </li>
           </Popone>
           <Poptwo popTwo={popTwo}>
             <li>History</li>

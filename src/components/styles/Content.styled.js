@@ -52,7 +52,6 @@ export const Button = styled.button`
   padding: 15px 30px;
   border-radius: 10px;
   color: hsl(0, 0%, 98%);
-  font-family: "Epilogue";
   background-color: hsl(0, 0%, 8%);
 
   &:hover {
@@ -85,7 +84,7 @@ export const Div2 = styled.div`
   }
 `;
 export const Imgdiv = styled.div`
-  margin-top: 100px;
+  margin-top: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -99,6 +98,11 @@ export const Imagetwo = styled.img`
   display: none;
 
   @media screen and (max-width: 768px) {
+    display: block;
+    width: 100%;
+    height: 400px;
+  }
+  @media screen and (max-width: 500px) {
     display: block;
     width: 100%;
     height: 220px;

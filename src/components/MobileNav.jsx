@@ -1,8 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Img from "../images/logo.svg";
-import { FaAngleDown as Icon } from "react-icons/fa";
 import { FaBars as Bars } from "react-icons/fa";
-
 import {
   Nav,
   Image,
@@ -14,11 +12,28 @@ import {
   Register,
   Divfour,
   Wrapper,
+  Expandedone,
+  Expandedtwo,
+  ExImg,
+  Icon,
+  Icontwo,
 } from "./styles/MobileNav.styled";
+import Todo from "../images/icon-todo.svg";
+import Calendar from "../images/icon-calendar.svg";
+import Reminder from "../images/icon-reminders.svg";
+import Planning from "../images/icon-planning.svg";
 
 const MobileNav = ({ mobile, setMobile }) => {
   const toggle = () => {
     setMobile(!mobile);
+  };
+  const [collapsed, setCollapsed] = useState(false);
+  const [collapsedTwo, setCollapsedTwo] = useState(false);
+  const showCollasped = () => {
+    setCollapsed(!collapsed);
+  };
+  const showCollaspedTwo = () => {
+    setCollapsedTwo(!collapsedTwo);
   };
 
   return (
@@ -26,14 +41,37 @@ const MobileNav = ({ mobile, setMobile }) => {
       <Divfour mobile={mobile}>
         <Divtwo mobile={mobile}>
           <Ul>
-            <li>
+            <li onClick={showCollasped}>
               Features
-              <Icon />
+              {collapsed ? <Icontwo /> : <Icon />}
             </li>
-            <li>
+            <Expandedone collapsed={collapsed}>
+              <li>
+                <ExImg src={Todo} />
+                Todo List
+              </li>
+              <li>
+                <ExImg src={Calendar} />
+                Calendar
+              </li>
+              <li>
+                <ExImg src={Reminder} />
+                Reminder
+              </li>
+              <li>
+                <ExImg src={Planning} />
+                Planning
+              </li>
+            </Expandedone>
+            <li onClick={showCollaspedTwo}>
               Company
-              <Icon />
+              {collapsedTwo ? <Icontwo /> : <Icon />}
             </li>
+            <Expandedtwo collapsedTwo={collapsedTwo}>
+              <li>History</li>
+              <li>Our Team</li>
+              <li>Blog</li>
+            </Expandedtwo>
             <li>Careers</li>
             <li>About</li>
           </Ul>

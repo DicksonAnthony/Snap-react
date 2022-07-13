@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { FaTimes } from "react-icons/fa";
+import { FaAngleDown, FaTimes, FaAngleUp } from "react-icons/fa";
 
 export const Wrapper = styled.div`
   display: none;
-  
+
   @media screen and (max-width: 789px) {
     display: block;
   }
@@ -50,13 +50,13 @@ export const Register = styled.button`
   margin-top: 20px;
   padding: 10px 49px;
   border-radius: 13px;
-  font-family: "Epilogue";
   background-color: transparent;
   border: 2px solid hsl(0, 0%, 8%);
 `;
 export const Closebtn = styled(FaTimes)`
   z-index: 1100;
   font-size: 35px;
+  font-weight: 200;
 `;
 export const Divfour = styled.div`
   width: 100vw;
@@ -66,4 +66,26 @@ export const Divfour = styled.div`
   transition: visibility 0.8s ease-in-out;
   background-color: rgba(20, 20, 20, 0.6);
   visibility: ${({ mobile }) => (mobile ? "visible" : "hidden")};
+`;
+export const Expandedone = styled.ul`
+  padding-left: 20px;
+  display: ${({ collapsed }) => (collapsed ? "block" : "none")};
+
+  li {
+    margin-bottom: 15px;
+  }
+`;
+export const Expandedtwo = styled(Expandedone)`
+  display: ${({ collapsedTwo }) => (collapsedTwo ? "block" : "none")};
+`;
+export const ExImg = styled.img`
+  width: 15px;
+  height: auto;
+  margin-right: 5px;
+`;
+export const Icon = styled(FaAngleDown)`
+  margin-left: 5px;
+`;
+export const Icontwo = styled(FaAngleUp)`
+  margin-left: 5px;
 `;
