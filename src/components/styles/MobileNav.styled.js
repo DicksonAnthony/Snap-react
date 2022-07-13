@@ -3,6 +3,7 @@ import { FaAngleDown, FaTimes, FaAngleUp } from "react-icons/fa";
 
 export const Wrapper = styled.div`
   display: none;
+  overflow: scroll;
 
   @media screen and (max-width: 789px) {
     display: block;
@@ -28,6 +29,7 @@ export const Divtwo = styled.div`
   z-index: 100;
   height: 100vh;
   padding: 80px 20px;
+  overflow: scroll;
   position: absolute;
   transition: all 1s ease-in-out;
   background-color: hsl(0, 0%, 98%);
